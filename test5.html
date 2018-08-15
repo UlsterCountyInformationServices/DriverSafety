@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        
+    </head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<div class="topnav">
+
+    <form>
+        <input class="button" type="button" value="Add New Record" onclick="window.location.href='test_add_form.php'"/>
+    <!--<input class="button" type="button" value="Search for Record" onclick="window.location.href='test_search.php'"/>-->
+    </form>
+
+    <form action="test_search_scrpt.php" method=post>
+        <input type="text" name="q" placeholder="Search for Record...">
+    <!--<button type="submit"><i class="fa fa-search"></i></button>-->
+        <button class="searchButton" type="submit" value="search">Search</button>
+    </form>
+    
+    <button class="collapsible">Additional Actions</button>
+<div class="content">
+     <form class="form" action="test_view.php" method=post> 
+        <h3>View by Department Number</h3>
+        <select name="deptlist">
+            <option value="1680">1680</option>
+            <option value="2">2</option>
+            <option value="4310">4310</option>
+            <option value="1010">1010</option>
+            <option value="5010">5010</option>
+            <option value="3110">3110</option>
+            <option value="1165">1165</option>
+            <option value="1230">1230</option>
+            <option value="1340">1340</option>
+            <option value="6010">6010</option>
+            <option value="6772">6772</option>
+            <option value="5630">5630</option>
+            <option value="1620">1620</option>
+            <option value="3020">3020</option>
+            <option value="1315">1315</option>
+            <option value="1170">1170</option>
+            <option value="3140">3140</option>
+            <option value="3411">3411</option>
+            <option value="8020">8020</option>
+            <option value="6510">6510</option>
+        </select>
+        <input text-align="center" class="searchButton" type = "submit" value="Select">
+    </form>
+    </div>
+</div>
+<script type="text/javascript"src=script.js></script>
+</body>    
+<?php
+
+require 'functions.php';
+    
+include_once('dbconnect.php');
+
+$sql = "SELECT PERMITNO AS \"Permit Number\", DEPTNO AS \"Department Number\", FNAME AS \"First Name\", LNAME AS \"Last Name\", CLIENTIDNO from Drivers ORDER BY PERMITNO ASC";
+$results = $conn->query($sql);
+       
+echo sql_to_html_table($results, $delim="\n");
+
+$conn->close();
+?>
+
+</html>
+

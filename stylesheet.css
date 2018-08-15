@@ -1,0 +1,248 @@
+h4{
+   font-family: arial;
+    text-align: center;
+}
+
+
+p{
+   font-family: arial;
+}
+
+.form{
+    font-family: arial;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #aedff9;}
+
+.table tr:nth-child(odd){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ffffff;}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #6098f2;
+    color: white;
+}
+
+.button {
+    background-color: #6098f2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.buttoncrit {
+    background-color: #ff3333;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.text , select{
+    width: 20%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.text2 , select2{
+    width: 50%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.submit{
+    border-radius: 8px;
+    width: 25%;
+    background-color: #6098f2;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.searchButton:hover{
+    background-color: #bfbfbf;
+}
+
+.button:hover{
+    background-color: #bfbfbf;
+}
+
+.submit:hover{background-color: #bfbfbf;}
+
+div{
+    font-family: arial;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.link:link, a:visited {
+    background-color: #6098f2;
+    border-radius: 8px;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.link:hover, a:active {
+    background-color: #bfbfbf;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  text-align: left;    
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 25%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.searchButton{
+    border-radius: 8px;
+    background-color: #6098f2;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.collapsible {
+    background-color: #6098f2;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 25%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+.active, .collapsible:hover {
+    background-color: #bfbfbf;
+}
+
+#button {
+    background-color: #6098f2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    text-align: left;
+}
+
+#button:hover{
+    background-color: #bfbfbf;
+}
+
+#topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  text-align: left;
+}

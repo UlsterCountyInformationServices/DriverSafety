@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <div>
+    <h2>Are You Sure You Want to Delete this Row?</h2>
+    <input type="hidden" name="clientidno" value="<?php echo $CLIENTIDNO;?>"/>
+    <body>
+    <form action="test_delete.php" name="clientidno">   
+    <input type='submit' value='Yes'>
+    <input type='button' value='No' onclick="window.location.href='test4.php'"/>
+    </form>
+    </body>
+    </div>
+</html>
